@@ -3085,8 +3085,8 @@ textarea.form-control-lg {
 .btn-outline-light {
   --bs-btn-color: #f8f9fa;
   --bs-btn-border-color: #f8f9fa;
-  --bs-btn-hover-color: var(--bs-link-hover-color);
-  --bs-btn-hover-bg: #f8f9fa;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--bs-link-hover-color);
   --bs-btn-hover-border-color: #f8f9fa;
   --bs-btn-focus-shadow-rgb: 248, 249, 250;
   --bs-btn-active-color: #000;
@@ -10970,7 +10970,6 @@ html {
 .masthead {
   padding-top: calc(10rem + 74px);
   padding-bottom: 5rem;
-  min-height: 100vh;
 }
 .masthead .masthead-heading {
   font-size: 4rem;
