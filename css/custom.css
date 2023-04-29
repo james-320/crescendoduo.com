@@ -1,0 +1,35 @@
+
+/* Australia Custom */
+@font-face {
+    font-family: "Australia Custom";
+    src: url('fonts/Australia-Custom.eot');
+    src: url('fonts/Australia-Custom.eot') format('embedded-opentype'),
+         url('fonts/Australia-Custom.woff2') format('woff2'),
+         url('fonts/Australia-Custom.woff') format('woff'),
+         url('fonts/Australia-Custom.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Australia Custom Italic */
+@font-face {
+    font-family: "Australia Custom";
+    src: url('fonts/Australia-Custom-Italic.eot');
+    src: url('fonts/Australia-Custom-Italic.eot') format('embedded-opentype'),
+         url('fonts/Australia-Custom-Italic.woff2') format('woff2'),
+         url('fonts/Australia-Custom-Italic.woff') format('woff'),
+         url('fonts/Australia-Custom-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+.masthead-heading {
+    font-family: "Australia Custom";
+    text-shadow: 5px 5px 6px #000;
+}
+
+.masthead {
+    background-image: url('../assets/img/header-crescendo.jpg');
+    background-position: center;
+    background-size:cover;
+}
