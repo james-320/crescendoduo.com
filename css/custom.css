@@ -2,7 +2,7 @@
 
 red {
     color: red;
-    font-size: calc(1.3rem + 0.6vw) !important;
+    font-size: 1.3rem !important;
 }
 
 .bg-gradient {

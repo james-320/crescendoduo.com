@@ -163,20 +163,20 @@
                 <div class="divider-custom">
                     <div class="divider-custom-line mb-5"></div>
                 </div>
-                <div class="row text-center">
+                <div class="row">
                     <!-- Contact Details -->
                     <div class="col-lg-6 justify-items-center">
                         <h1 class="text-center display-6 pb-3">Contact Details</h1>
-                        <div class="row align-items-center justify-content-md-center">
+                        <div class="row text-center justify-content-md-center">
                             <h4 class="pt-3">Jay</h4>
                             <div class="col-1 fs-4 text-center">
                                 <i class="fa-solid fa-mobile-screen-button"></i>
                             </div>
-                            <div class="col-4">
+                            <div class="col-4 text-start">
                                 0402 149 889
                             </div>
                         </div>
-                        <div class="row align-items-center justify-content-md-center mb-5">
+                        <div class="row text-center justify-content-md-center mb-5">
                             <div class="col-1 fs-4 text-center justify-content-md-center">
                                 <i class="fa-regular fa-envelope"></i>
                             </div>
@@ -184,12 +184,12 @@
                                 <a href="mailto:jaywestonsings@hotmail.com">jaywestonsings@hotmail.com</a>
                             </div>
                         </div>
-                        <div class="row align-items-center justify-content-md-center">
+                        <div class="row text-center justify-content-md-center">
                             <h4 class="pt-3">Sarah</h4>
                             <div class="col-1 fs-4 text-center">
                                 <i class="fa-solid fa-mobile-screen-button"></i>
                             </div>
-                            <div class="col-4">
+                            <div class="col-4 text-start">
                                 0466 406 085
                             </div>
                         </div>
@@ -205,69 +205,67 @@
                     <!-- Booking Form -->
                     <div class="col-lg-6">
                         <h1 class="text-center display-6 pb-3" id="bookingForm">Booking Form</h1>
-                        <div class="m-4">
-                            <form class="needs-validation" name="contact" method="POST" data-netlify="true" value="New enquiry from %{siteName} (%{submissionId})" novalidate>
-                                <div class="row mb-3">
-                                    <label class="col-sm-3 col-form-label" for="name">Name: <red>*</red></label>
-                                    <div class="col-sm-9">
-                                        <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
+                        <form class="needs-validation" name="contact" method="POST" data-netlify="true" value="New enquiry from %{siteName} (%{submissionId})" novalidate>
+                            <div class="row mb-3 align-items-center">
+                                <label class="col-sm-3 col-form-label" for="name">Name: <red>*</red></label>
+                                <div class="col-sm-9">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3 align-items-center">
+                                <label class="col-sm-3 col-form-label" for="emailAddress">Email Address: <red>*</red></label>
+                                <div class="col-sm-9">
+                                    <input type="email" name="email" class="form-control" id="emailAddress" placeholder="Email Address" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3 align-items-center">
+                                <label class="col-sm-3 col-form-label" for="phoneNumber">Mobile Number:</label>
+                                <div class="col-sm-9">
+                                    <input type="number" name="phoneNumber" class="form-control" id="phoneNumber" placeholder="Phone Number">
+                                </div>
+                            </div>        
+                            <div class="row mb-3 align-items-center">
+                                <label class="col-sm-3 col-form-label">Event Type:</label>
+                                <div class="col-sm-9">
+                                    <select name="eventType" class="form-select">
+                                        <option value=""></option>
+                                        <option value="wedding">Wedding</option>
+                                        <option value="festival">Festival</option>
+                                        <option value="corporate">Corporate Function</option>
+                                        <option value="birthday">Birthday</option>
+                                        <option value="pub">Restaurant/Pub/Bar</option>
+                                        <option value="concert">Concert</option>
+                                        <option value="other">Other (Enter details below)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mb-3 align-items-start">
+                                <label class="col-sm-3 col-form-label" for="eventDate">Event Date:</label>
+                                <div class="col-sm-9">
+                                    <input type="date" name="eventDate" class="form-control" id="eventDate">
+                                </div>
+                            </div>  
+                            <div class="row mb-3 align-items-start">
+                                <label class="col-sm-3 col-form-label" for="message">Message: <red>*</red></label>
+                                <div class="col-sm-9">
+                                    <textarea rows="3" name="message" class="form-control" id="message" placeholder="Your message here" required></textarea>
+                                </div>
+                            </div>
+                            <div class="row mb-3 align-items-start">
+                                <div class="col-sm-9 offset-sm-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="checkAgree" value="agree" required>
+                                        <label class="form-check-label" for="checkAgree">I agree to the <a href="#">Terms and Conditions</a></label>
                                     </div>
                                 </div>
-                                <div class="row mb-3">
-                                    <label class="col-sm-3 col-form-label" for="emailAddress">Email Address: <red>*</red></label>
-                                    <div class="col-sm-9">
-                                        <input type="email" name="email" class="form-control" id="emailAddress" placeholder="Email Address" required>
-                                    </div>
+                            </div>
+                            <div class="row mb-3 align-items-start">
+                                <div class="col-sm-9 offset-sm-3">
+                                    <input type="submit" class="btn btn-primary" value="Submit">
+                                    <input type="reset" class="btn btn-secondary ms-2" value="Reset">
                                 </div>
-                                <div class="row mb-3">
-                                    <label class="col-sm-3 col-form-label" for="phoneNumber">Mobile Number:</label>
-                                    <div class="col-sm-9">
-                                        <input type="number" name="phoneNumber" class="form-control" id="phoneNumber" placeholder="Phone Number">
-                                    </div>
-                                </div>        
-                                <div class="row mb-3">
-                                    <label class="col-sm-3 col-form-label">Event Type:</label>
-                                    <div class="col-sm-9">
-                                        <select name="eventType" class="form-select">
-                                            <option value=""></option>
-                                            <option value="wedding">Wedding</option>
-                                            <option value="festival">Festival</option>
-                                            <option value="corporate">Corporate Function</option>
-                                            <option value="birthday">Birthday</option>
-                                            <option value="pub">Restaurant/Pub/Bar</option>
-                                            <option value="concert">Concert</option>
-                                            <option value="other">Other (Enter details below)</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <label class="col-sm-3 col-form-label" for="eventDate">Event Date:</label>
-                                    <div class="col-sm-9">
-                                        <input type="date" name="eventDate" class="form-control" id="eventDate">
-                                    </div>
-                                </div>  
-                                <div class="row mb-3">
-                                    <label class="col-sm-3 col-form-label" for="message">Message: <red>*</red></label>
-                                    <div class="col-sm-9">
-                                        <textarea rows="3" name="message" class="form-control" id="message" placeholder="Your message here" required></textarea>
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <div class="col-sm-9 offset-sm-3">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="checkAgree" value="agree" required>
-                                            <label class="form-check-label" for="checkAgree">I agree to the <a href="#">Terms and Conditions</a></label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <div class="col-sm-9 offset-sm-3">
-                                        <input type="submit" class="btn btn-primary" value="Submit">
-                                        <input type="reset" class="btn btn-secondary ms-2" value="Reset">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
